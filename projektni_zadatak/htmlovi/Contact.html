@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="description" content="Web stranica o Gradu Rogoznica">
+  <meta name="keywords" content="html,css,home,news,gallery,contact,about">
+  <meta name="author" content="Filip Mihić">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+<header>
+  <div class="under"></div>
+  <div class="over"></div>
+  <div class="p1"></div>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="../htmlovi/News.html">News</a></li>
+      <li><a href="../htmlovi/Contact.html">Contact</a></li>
+      <li><a href="../htmlovi/About.html">About</a></li>
+      <li><a href="../htmlovi/Gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <h1>Contact</h1>
+  <div id="contact">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d46278.92223795818!2d15.937053793457018!3d43.53502269609154!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1335177d6d16f06f%3A0xfed0811a6d909859!2sRogoznica!5e0!3m2!1shr!2shr!4v1610122596614!5m2!1shr!2shr" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <form action="http://work2.eburza.hr/pwa/responzive-page/send-contact.php" id="contact_form" name="contact_form" method="POST">
+      <label for="fname">Ime</label>
+      <input type="text" id="fname" name="firstname" placeholder="Tvoje ime..">
+
+      <label for="lname">Prezime</label>
+      <input type="text" id="lname" name="lastname" placeholder="Tvoje prezime..">
+      
+      <label for="lname">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="Tvoj e-mail..">
+
+      <label for="country">Zemlja *</label>
+      <select id="country" name="country">
+        <option value="">Odaberi</option>
+        <option value="DE">Njemačka</option>
+        <option value="HR" selected>Hrvatska</option>
+        <option value="PL">Poljska</option>
+        <option value="HU">Mađarska</option>
+        <option value="CH">Švicarska</option>
+      </select>
+      
+      <fieldset class="rating">
+          <legend>Ocjena za Rogoznicu: *</legend>
+          <input type="radio" id="star5" name="rating" value="5" required /><label for="star5" title="Rocks!">5 stars</label>
+          <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="Pretty good">4 stars</label>
+          <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="Meh">3 stars</label>
+          <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="Kinda bad">2 stars</label>
+          <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="Sucks big time">1 star</label>
+      </fieldset>
+    
+      <div><input type="submit" value="Pošalji"></div>
+    </form>
+  </div>
+</main>
+<footer>
+  <p>Copyright &copy; 2020 Filip Mihić. <a href="https://github.com/filip1998?tab=repositories" target="blank"><img src="../img/GitHub.png" title="Github" alt="Github"></a></p>
+</footer>
+</body>
+</html>
